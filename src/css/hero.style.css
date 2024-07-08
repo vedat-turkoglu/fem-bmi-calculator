@@ -1,0 +1,89 @@
+.hero {
+  padding-block: 74px 86px;
+  padding-inline: 140px;
+
+  background: linear-gradient(
+    290.1deg,
+    #d6e6fe 0%,
+    rgba(214, 252, 254, 0) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 978px 737px;
+}
+
+.logo {
+  width: 64px;
+  margin-block-end: 28px;
+}
+
+.hero__wrapper {
+  display: flex;
+  gap: 32px;
+}
+
+.hero__text-container {
+  flex: 1;
+}
+
+.hero__title {
+  margin-block-start: 99px;
+  margin-block-end: 35px;
+  font-size: 64px;
+  letter-spacing: -0.05em;
+  color: var(--color-gun-metal);
+}
+
+.hero__desc {
+  margin-inline-end: 99px;
+}
+
+/* *** MEDIA QUESRIES - TABLET *** */
+@media screen and (max-width: 800px) {
+  .hero {
+    padding-block-start: 32px;
+    padding-inline: 39px 43px;
+    background-size: 768px 640px;
+  }
+
+  .logo {
+    width: 40px;
+    margin-block-end: 40px;
+    margin-inline: auto;
+  }
+
+  .hero__wrapper {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 40px;
+  }
+
+  .hero__text-container {
+    text-align: center;
+  }
+
+  .hero__title {
+    font-size: 48px;
+    margin-block-start: 0;
+    margin-block-end: 24px;
+  }
+
+  .hero__desc {
+    margin-inline: auto;
+  }
+}
+
+/* *** MEDIA QUESRIES - MOBILE *** */
+@media screen and (max-width: 400px) {
+  .hero {
+    padding-inline: 24px;
+    background-size: 375px 640px;
+  }
+
+  .logo {
+    margin-block-end: 24px;
+  }
+
+  .hero__wrapper {
+    gap: 48px;
+  }
+}

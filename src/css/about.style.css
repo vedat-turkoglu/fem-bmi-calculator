@@ -1,0 +1,65 @@
+.about {
+  position: relative;
+  display: flex;
+  gap: 131px;
+  margin-block: 65px 96px;
+  margin-inline: 140px;
+}
+
+.pattern-curved-line-left {
+  position: absolute;
+  right: 27px;
+  top: -52px;
+  width: 85px;
+  height: 200px;
+}
+
+.about__image {
+  width: 564px;
+  height: 533px;
+}
+
+.about__title {
+  font-size: 48px;
+  margin-block: 184px 35px;
+}
+
+/* *** MEDIA QUESRIES - TABLET *** */
+@media screen and (max-width: 800px) {
+  .about {
+    gap: 75px;
+    margin-block: 96px;
+    margin-inline: -42px 43px;
+  }
+  .pattern-curved-line-left {
+    display: none;
+  }
+
+  .about__image {
+    width: 360px;
+    height: 411px;
+  }
+
+  .about__title {
+    font-size: 32px;
+    margin-block: 35px 32px;
+  }
+}
+
+/* *** MEDIA QUESRIES - MOBILE *** */
+@media screen and (max-width: 400px) {
+  .about {
+    flex-direction: column;
+    gap: 48px;
+    margin-block: 72px;
+    margin-inline: auto;
+  }
+
+  .about__text-container {
+    padding-inline: 24px 23px;
+  }
+  .about__image {
+    width: 375px;
+    height: 354px;
+  }
+}
